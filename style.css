@@ -1,0 +1,450 @@
+/* ================================
+   TEMPODROME — GLOBAL STYLES
+   ================================ */
+
+/* Import Google Font — Inter is clean and modern */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Reset — removes browser default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ================================
+   NAVIGATION
+   ================================ */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #d4a020;
+  letter-spacing: -0.3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #888888;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* ================================
+   SHARED SECTION STYLES
+   ================================ */
+
+section {
+  padding: 96px 24px;
+}
+
+.section-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 48px;
+  color: #ffffff;
+}
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.app-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 27px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #888888;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.download-btn {
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.download-btn:hover {
+  opacity: 0.8;
+}
+
+.download-btn img {
+  height: 52px;
+}
+
+/* ================================
+   FEATURES SECTION
+   ================================ */
+
+#features {
+  background-color: #080808;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.feature {
+  background-color: #111111;
+  border: 1px solid #1a1a1a;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.feature-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.feature p {
+  color: #888888;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ================================
+   SCREENSHOTS SECTION
+   ================================ */
+
+#screenshots {
+  background-color: #000000;
+}
+
+.screenshot-label {
+  color: #d4a020;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.screenshots-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.screenshots-row img {
+  border-radius: 20px;
+  border: 1px solid #1a1a1a;
+}
+
+/* Watch screenshots are square-ish so smaller width */
+#screenshots .screenshots-row:first-of-type img {
+  width: 180px;
+}
+
+/* iPhone screenshots are taller */
+#screenshots .screenshots-row:last-of-type img {
+  width: 220px;
+}
+
+/* ================================
+   HOW TO USE SECTION
+   ================================ */
+
+#how-to-use {
+  background-color: #080808;
+}
+
+.guide-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.guide-item {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.guide-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #d4a020;
+  letter-spacing: 1px;
+  min-width: 32px;
+  padding-top: 4px;
+}
+
+.guide-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.guide-item p {
+  color: #888888;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ================================
+   FAQ SECTION
+   ================================ */
+
+#faq {
+  background-color: #000000;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid #1a1a1a;
+  padding: 28px 0;
+}
+
+.faq-item:first-child {
+  border-top: 1px solid #1a1a1a;
+}
+
+.faq-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.faq-item p {
+  color: #888888;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ================================
+   SUPPORT SECTION
+   ================================ */
+
+#support {
+  background-color: #080808;
+  text-align: center;
+}
+
+.support-text {
+  color: #888888;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.support-email {
+  display: inline-block;
+  color: #d4a020;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 32px;
+  transition: opacity 0.2s;
+}
+
+.support-email:hover {
+  opacity: 0.8;
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-links a {
+  color: #888888;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.social-links a:hover {
+  color: #d4a020;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+  border-top: 1px solid #1a1a1a;
+  padding: 32px 24px;
+}
+
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  color: #444444;
+  font-size: 14px;
+}
+
+footer a {
+  color: #444444;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #888888;
+}
+
+/* ================================
+   RESPONSIVE — MOBILE
+   ================================ */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .guide-item {
+    gap: 16px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .made-in {
+    color: #d4a020;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+}
+/* ================================
+   WAITLIST
+   ================================ */
+
+.launch-soon {
+  color: #d4a020;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+
+.waitlist-hint {
+  color: #555555;
+  font-size: 13px;
+  margin-top: 12px;
+}

@@ -388,6 +388,11 @@ footer a:hover {
   color: #888888;
 }
 
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
 /* ================================
    RESPONSIVE — MOBILE
    ================================ */

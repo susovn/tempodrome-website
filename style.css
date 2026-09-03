@@ -135,17 +135,21 @@ h1 {
   line-height: 1.6;
 }
 
-.download-btn {
+.waitlist-btn {
   display: inline-block;
+  background-color: #d4a020;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 16px 40px;
+  border-radius: 50px;
   transition: opacity 0.2s;
+  letter-spacing: 0.3px;
 }
 
-.download-btn:hover {
-  opacity: 0.8;
-}
-
-.download-btn img {
-  height: 52px;
+.waitlist-btn:hover {
+  opacity: 0.85;
 }
 
 /* ================================

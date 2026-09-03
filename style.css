@@ -152,6 +152,14 @@ h1 {
   opacity: 0.85;
 }
 
+.usp {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
 /* ================================
    FEATURES SECTION
    ================================ */
